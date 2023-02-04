@@ -3,11 +3,14 @@ package main
 import "fmt"
 
 // var name string = "Gopher นะจ๊ะ"
-// name := "Gopher นะจ๊ะ" แตก
+// name := "Gopher นะจ๊ะ" แตก เพราะ := ใช้ได้เฉพาะภายใน function body
 // var ไว้ประกาศตัวแปร
 func main() {
 	//var name string = "Gopher นะจ๊ะ"
 	// name := "Gopher นะจ๊ะ"
+	word := "Gopher นะจ๊ะ"
+	word += "Test"
+	fmt.Printf("Hello, %v !!!!!!! \n", word)
 	var name string // ประกาศตัวแปรเฉย ๆ Go จะให้ค่า Default เสมอ Default String = "" Int = 0 Boolean = False
 	fmt.Printf("Hello, %v !!!!!!! \n", name)
 	fmt.Printf("type: %T \n", name)  // print Type ของ variable %T
